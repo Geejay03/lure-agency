@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #000;
-  color: #fff;
+  font-family: 'LATO', sans-serif;
+  background-color: #0A0A0A;
+  color: #EAEAEA;
   text-align: center;
 }
 
@@ -22,22 +22,22 @@ header {
 .cta-button {
   display: inline-block;
   margin-top: 30px;
-  padding: 15px 30px;
-  background-color: #e60073;
-  color: #fff;
+  padding: 12px 24px;
+  background-color: #9B1B30;
+  color: White;
   text-decoration: none;
   font-size: 18px;
   border-radius: 8px;
-  transition: background-color 0.3s;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
   background-color: #c90063;
 }
-
-footer {
+tttnpfooter {
   padding: 20px;
-  background-color: #111;
+  background-color: #4B1032;
   margin-top: 50px;
   font-size: 14px;
 }
