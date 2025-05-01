@@ -1,43 +1,48 @@
 body {
   margin: 0;
-  font-family: 'LATO', sans-serif;
-  background-color: #0A0A0A;
-  color: #EAEAEA;
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
+  color: #fff;
   text-align: center;
-}
-
-header {
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .logo {
-  width: 150px;
-  height: auto;
+  max-width: 180px;
+  margin-bottom: 20px;
 }
 
-.hero {
-  padding: 50px 20px;
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
 }
 
-.cta-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 24px;
-  background-color: #9B1B30;
-  color: White;
+p.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.apply-button {
+  background: linear-gradient(135deg, #8b0000, #ff004f);
+  color: white;
+  padding: 14px 32px;
+  font-size: 1em;
+  border: none;
+  border-radius: 50px;
   text-decoration: none;
-  font-size: 18px;
-  border-radius: 8px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.cta-button:hover {
-  background-color: #c90063;
+.apply-button:hover {
+  background: linear-gradient(135deg, #ff004f, #8b0000);
+  transform: scale(1.05);
 }
-tttnpfooter {
-  padding: 20px;
-  background-color: #4B1032;
-  margin-top: 50px;
-  font-size: 14px;
+
+footer {
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #777;
 }
