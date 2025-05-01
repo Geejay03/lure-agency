@@ -1,48 +1,64 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap');
+
+/* General Body Styling */
 body {
-  margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #000;
-  color: #fff;
+  background: radial-gradient(circle at top, #111111, #000000);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 40px 20px;
 }
 
+/* Logo Styling */
 .logo {
-  max-width: 180px;
+  width: 180px;
+  height: auto;
   margin-bottom: 20px;
 }
 
+/* Heading Styling */
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #e0e0e0;
+  margin: 0 20px;
 }
 
-p.subtitle {
-  font-size: 1.2em;
-  margin-bottom: 40px;
-  color: #ccc;
+/* Subheading Styling */
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #cccccc;
+  margin: 20px 20px 40px;
+  max-width: 700px;
 }
 
-.apply-button {
-  background: linear-gradient(135deg, #8b0000, #ff004f);
+/* Apply Button Styling */
+a.apply-btn {
+  background: linear-gradient(to right, #ff4d4d, #ff1a75);
   color: white;
-  padding: 14px 32px;
-  font-size: 1em;
-  border: none;
-  border-radius: 50px;
+  padding: 14px 28px;
   text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  font-size: 18px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
 }
 
-.apply-button:hover {
-  background: linear-gradient(135deg, #ff004f, #8b0000);
-  transform: scale(1.05);
+a.apply-btn:hover {
+  background: linear-gradient(to right, #e6005c, #b3003b);
 }
 
+/* Footer Styling */
 footer {
-  margin-top: 60px;
-  font-size: 0.9em;
-  color: #777;
+  margin-top: auto;
+  padding: 20px 0;
+  color: #666;
+  font-size: 14px;
 }
