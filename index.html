@@ -30,27 +30,16 @@
       line-height: 1.6; letter-spacing: .2px;
     }
 
-    /* Navigation */
-    .nav {
-      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px);
-      background: linear-gradient(to bottom, rgba(11,11,12,.85), rgba(11,11,12,.35));
-      border-bottom: 1px solid var(--border);
-    }
+    .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); background: linear-gradient(to bottom, rgba(11,11,12,.85), rgba(11,11,12,.35)); border-bottom: 1px solid var(--border); }
     .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
     .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
     .brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text); }
-    .logo {
-      width: 36px; height: 36px; border-radius: 50%;
-      background: conic-gradient(from 0deg, var(--gold), var(--gold-strong), #6a5329, var(--gold));
-      filter: saturate(90%);
-      box-shadow: 0 0 0 2px rgba(201,163,91,.15), 0 6px 18px rgba(0,0,0,.45);
-    }
+    .logo { width: 36px; height: 36px; border-radius: 50%; background: conic-gradient(from 0deg, var(--gold), var(--gold-strong), #6a5329, var(--gold)); filter: saturate(90%); box-shadow: 0 0 0 2px rgba(201,163,91,.15), 0 6px 18px rgba(0,0,0,.45); }
     .title { font-family: 'Cormorant Garamond', serif; font-size: 20px; letter-spacing:.6px; }
     .nav-links { display:flex; gap: 18px; }
     .nav-links a { color: var(--muted); text-decoration:none; font-size:14px; padding: 8px 10px; border-radius: 999px; border: 1px solid transparent; }
     .nav-links a:hover { color: var(--text); border-color: var(--border); }
 
-    /* Hero */
     .hero { position: relative; overflow:hidden; }
     .hero-inner { display:grid; grid-template-columns: 1.2fr .8fr; gap: 40px; padding: 96px 0 72px; align-items: center; }
     .eyebrow { color: var(--gold-strong); text-transform: uppercase; font-size: 12px; letter-spacing: 3px; }
@@ -64,46 +53,28 @@
     .btn-primary:hover { filter: brightness(1.06); }
 
     .card { background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00)); border: 1px solid var(--border); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
-
     .hero-card { display:grid; gap: 14px; }
     .badge { display:inline-flex; align-items:center; gap:8px; color:#111; background:linear-gradient(180deg, var(--gold-strong), var(--gold)); border-radius:999px; padding:6px 10px; font-size:12px; font-weight:600; width:max-content; }
 
-    /* Sections */
     section { padding: 84px 0; border-top: 1px solid rgba(255,255,255,.02); }
     .section-title { font-family:'Cormorant Garamond', serif; font-size: 36px; margin: 0 0 10px; }
     .section-sub { color: var(--muted); margin-bottom: 30px; }
 
     .grid-2 { display:grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
     .grid-3 { display:grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-
-    /* Feature cards */
     .feature { display:grid; gap:8px; padding:18px; border-radius:18px; border:1px solid var(--border); background: var(--card); }
     .feature h3 { margin:0; font-size:18px; }
     .feature p { margin:0; color: var(--muted); font-size: 14.5px; }
 
-    /* Footer */
     footer { padding: 40px 0 80px; color: var(--muted); font-size: 14px; }
     .foot { display:flex; justify-content:space-between; gap: 18px; flex-wrap: wrap; }
 
-    /* Responsive */
-    @media (max-width: 960px) {
-      .hero-inner { grid-template-columns: 1fr; padding-top: 72px; }
-      .grid-2, .grid-3 { grid-template-columns: 1fr; }
-      .nav-links { display:none; }
-    }
-
-    /* Subtle animated border for cards */
+    @media (max-width: 960px) { .hero-inner { grid-template-columns: 1fr; padding-top: 72px; } .grid-2, .grid-3 { grid-template-columns: 1fr; } .nav-links { display:none; } }
     .glow { position: relative; }
-    .glow::after {
-      content:""; position:absolute; inset: -1px; border-radius: 22px;
-      background: radial-gradient(600px 120px at 20% -20%, rgba(201,163,91,.15), transparent),
-                  radial-gradient(400px 200px at 120% 120%, rgba(201,163,91,.15), transparent);
-      z-index:-1; filter: blur(12px); opacity:.7;
-    }
+    .glow::after { content:""; position:absolute; inset: -1px; border-radius: 22px; background: radial-gradient(600px 120px at 20% -20%, rgba(201,163,91,.15), transparent), radial-gradient(400px 200px at 120% 120%, rgba(201,163,91,.15), transparent); z-index:-1; filter: blur(12px); opacity:.7; }
   </style>
 </head>
 <body>
-  <!-- Nav -->
   <nav class="nav">
     <div class="container nav-inner">
       <a class="brand" href="#home" aria-label="The Lure Club Home">
@@ -119,7 +90,6 @@
     </div>
   </nav>
 
-  <!-- Hero -->
   <header id="home" class="hero">
     <div class="container hero-inner">
       <div>
@@ -158,7 +128,6 @@
     </div>
   </header>
 
-  <!-- About -->
   <section id="about">
     <div class="container">
       <h2 class="section-title">The Story Behind The Club</h2>
@@ -168,102 +137,3 @@
           <h3>Exclusivity</h3>
           <p>Not every creator qualifies. We work with those who value discretion, discipline, and results.</p>
         </div>
-        <div class="feature">
-          <h3>Luxury</h3>
-          <p>Your brand deserves premium positioning — crafted visuals, premium offers, and a refined customer journey.</p>
-        </div>
-        <div class="feature">
-          <h3>Results</h3>
-          <p>Proven systems that turn attention into wealth, designed to scale beyond your personal time.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services">
-    <div class="container">
-      <h2 class="section-title">What We Do (For Those Inside)</h2>
-      <p class="section-sub">We build empires behind the scenes. Members enjoy end‑to‑end support across brand, growth, monetization, and operations.</p>
-      <div class="grid-2">
-        <div class="feature">
-          <h3>Fan Management &amp; Retention</h3>
-          <p>24/7 chat management and engagement systems focused on conversion, high‑ticket upsells, and lifetime value.</p>
-        </div>
-        <div class="feature">
-          <h3>Marketing &amp; Growth</h3>
-          <p>Organic strategies, collaborations, and paid campaigns that scale audiences quickly and profitably.</p>
-        </div>
-        <div class="feature">
-          <h3>Automation Systems</h3>
-          <p>Automations for posting, messaging, analytics, and revenue tracking — so income continues when you’re offline.</p>
-        </div>
-        <div class="feature">
-          <h3>Luxury Branding</h3>
-          <p>Visual identity, positioning, and offer design that elevate you beyond a creator — into a lifestyle brand.</p>
-        </div>
-      </div>
-      <div class="cta-row" style="margin-top:28px;">
-        <a class="btn btn-primary" href="#apply">Apply to enter</a>
-        <a class="btn" href="#contact">Ask a discreet question</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Apply -->
-  <section id="apply">
-    <div class="container">
-      <h2 class="section-title">Apply to Enter The Club</h2>
-      <p class="section-sub">The Lure Club is invite‑only. If you believe you’re ready, complete the application. Every applicant is carefully vetted — only a select few step inside.</p>
-      <div class="card glow" style="display:grid; gap: 14px;">
-        <p style="margin:0;">Click the button below to open the secure application form.</p>
-        <!-- TODO: Replace href with your live Google Form URL -->
-        <a class="btn btn-primary" href="https://docs.google.com/forms/d/REPLACE_WITH_YOUR_FORM_ID/viewform" target="_blank" rel="noopener">Open Application Form</a>
-        <small style="color:var(--muted);">We value discretion. Your information remains confidential.</small>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Discreet. Professional. Always Available.</h2>
-      <p class="section-sub">Questions about The Lure Club? Reach us directly. We respond within 24 hours.</p>
-      <div class="grid-2">
-        <div class="card glow">
-          <h3 style="margin-top:0;">Direct Lines</h3>
-          <ul style="list-style:none; padding:0; margin:10px 0 0; display:grid; gap:8px;">
-            <!-- TODO: Replace placeholders with your real handles -->
-            <li>📧 Email: <a href="mailto:hello@thelureclub.com">hello@thelureclub.com</a></li>
-            <li>📱 Instagram: <a href="https://instagram.com/thelureclub" target="_blank" rel="noopener">@thelureclub</a></li>
-            <li>🔗 Twitter/X: <a href="https://x.com/thelureclub" target="_blank" rel="noopener">@thelureclub</a></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3 style="margin-top:0;">Working With Us</h3>
-          <p style="margin:0 0 6px;">We take on a limited number of creators to protect quality and attention. If the roster is full, we’ll add qualified applicants to a private waitlist.</p>
-          <p style="margin:0; color:var(--muted);">Tip: When applying, share your goals, current numbers, and what you believe is holding you back. Specifics help us help you faster.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container foot">
-      <div style="display:flex; align-items:center; gap:10px;">
-        <span class="logo" aria-hidden="true"></span>
-        <div>
-          <div style="font-weight:600;">The Lure Club</div>
-          <div style="font-size:12px; color:var(--muted);">Invite‑Only Creator Management</div>
-        </div>
-      </div>
-      <div>&copy; <span id="year"></span> The Lure Club. All rights reserved.</div>
-    </div>
-  </footer>
-
-  <script>
-    // Set current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
